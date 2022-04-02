@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProgramaMantenimiento.FormVista"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramaMantenimiento"
+        mc:Ignorable="d"
+        Title="Registros" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,145" SelectionChanged="dataGrid1_SelectionChanged_1"/>
+        <Button Content="Modificar" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Height="25" Width="62" RenderTransformOrigin="-1.048,0.762" Click="Button_Click_1"/>
+        <Button x:Name="btn_regresar" Content="Regresar" Margin="693,377,0,0" Click="btn_regresar_Click" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF23A6BF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Window>

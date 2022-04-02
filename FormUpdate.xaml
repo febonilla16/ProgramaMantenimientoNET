@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProgramaMantenimiento.FormUpdate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramaMantenimiento"
+        mc:Ignorable="d"
+        Title="Manipulación de registros" Height="350" Width="490">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF23A6BF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="45,43,0,0" TextWrapping="Wrap" Text="Codigo:" VerticalAlignment="Top" RenderTransformOrigin="-1.926,-4.491" Foreground="#FFECE1E1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,88,0,0" TextWrapping="Wrap" Text="Nombres:" VerticalAlignment="Top" Foreground="#FFECE1E1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,142,0,0" TextWrapping="Wrap" Text="Apellidos:" VerticalAlignment="Top" RenderTransformOrigin="-0.771,-0.185" Foreground="#FFECE1E1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,188,0,0" TextWrapping="Wrap" Text="Telefono:" VerticalAlignment="Top" RenderTransformOrigin="-0.223,0.378" Foreground="#FFECE1E1"/>
+        <TextBox x:Name="codigotxt" HorizontalAlignment="Left" Margin="135,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="codigotxt_PreviewTextInput"/>
+        <TextBox x:Name="nombretxt" HorizontalAlignment="Left" Margin="135,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="apellidotxt" HorizontalAlignment="Left" Margin="135,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="telefonotxt" HorizontalAlignment="Left" Margin="135,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="371,44,0,0" VerticalAlignment="Top" Height="20" Width="45" Click="Button_Click"/>
+        <Button x:Name="btn_modificar" Content="Modificar" HorizontalAlignment="Left" Margin="111,236,0,0" VerticalAlignment="Top" Height="20" Width="72" RenderTransformOrigin="0.458,-0.248" Visibility="Hidden" Click="btn_modificar_Click"/>
+        <Button x:Name="btn_eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="269,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.379,-0.699" Height="20" Width="70" Click="btn_eliminar_Click" Visibility="Hidden"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="394,273,0,0" VerticalAlignment="Top" Height="23" Width="56" RenderTransformOrigin="0.158,-0.65" Click="Button_Click_1"/>
+    </Grid>
+</Window>
